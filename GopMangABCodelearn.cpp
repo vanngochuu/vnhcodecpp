@@ -16,7 +16,7 @@ int main(){
     
     int i = 0, j = 0;
     while (i < n && j < m){
-        if (A[i] < B[j]){
+        if (A[i] < B[j]){       // So sánh A[i] với B[j] để đưa số nhỏ hơn vào mảng C
             C[size] = A[i];
             size++;
             i++;
@@ -26,13 +26,13 @@ int main(){
             j++;
         }
     }
-    while (i < n){
+    while (i < n){              // Khi mảng B hết, mảng A còn thì đưa các phần tử còn lại vào mảng C
         C[size] = A[i];
         size++;
         i++;
     }
     while (j < m){
-        C[size] = B[j];
+        C[size] = B[j];         // Khi mảng A hết, mảng B còn thì đưa các phần tử còn lại vào mảng C
         size++;
         j++;
     }
