@@ -10,16 +10,16 @@ int main(){
 
     int Max = A[0];
     for (int i = 1; i < n; i++){
-         if (A[i] > Max) Max = A[i];
+         if (A[i] > Max) Max = A[i];      // Tìm max của mảng A
     }
 
     int B[100];
-    for (int i = 0; i <= Max; i++) B[i] = 0;
+    for (int i = 0; i <= Max; i++) B[i] = 0;  // Tạo mảng B lưu tần suất các số trong mảng A
 
-    for (int i = 0; i < n; i++) B[A[i]] += 1;
+    for (int i = 0; i < n; i++) B[A[i]] += 1;  // Cập nhật tần suất số có giá trị A[i]
 
     for (int i = 0; i <= Max; i++){
-         if (B[i] > 0) cout << i << " - " << B[i] << "; ";
+         if (B[i] > 0) cout << i << " - " << B[i] << "; ";  // Số có tần suất > 0 thì mới xuất (tồn tại trong A)
     }
     return 0;
 }
