@@ -21,7 +21,7 @@ int main(){
     for (int i = 0; i < n; i++) B[A[i]]++;  // Cập nhật tần suất số có giá trị A[i]
 
     for (int i = 0; i <= Max; i++){
-         if (B[i] > 0) cout << i << " - " << B[i] << "; ";  // Số có tần suất > 0 thì mới xuất (tồn tại trong A)
+         if (B[i] > 0) cout << i << " - " << B[i] << "; ";  // Số có tần suất > 0 (tồn tại trong A) thì mới xuất 
     }
     return 0;
 }
