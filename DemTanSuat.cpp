@@ -15,7 +15,7 @@ int main(){
          if (A[i] > Max) Max = A[i];      // Tìm max của mảng A
     }
 
-    int B[100] = {0}; // Tạo mảng B lưu tần suất các số trong mảng A
+    int B[100] = {0};// Tạo mảng B lưu tần suất các số trong mảng A
 
     for (int i = 0; i < n; i++) B[A[i]]++;  // Cập nhật tần suất số có giá trị A[i]
 
