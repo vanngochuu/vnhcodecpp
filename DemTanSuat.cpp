@@ -6,21 +6,21 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int n, A[100];
+    int n, arr[100];
     cin >> n;
-    for (int i = 0; i < n; i++) cin >> A[i];
+    for (int i = 0; i < n; i++) cin >> arr[i];
 
-    int Max = A[0];
+    int max = arr[0];
     for (int i = 1; i < n; i++){
-         if (A[i] > Max) Max = A[i];      // Tìm max của mảng A
+         if (arr[i] > max) max = arr[i];      // Tìm max của mảng arr
     }
 
-    int B[100] = {0}; // Tạo mảng B lưu tần suất các số trong mảng A
+    int freq[100] = {0}; // Tạo mảng freq lưu tần suất các số trong mảng arr
 
-    for (int i = 0; i < n; i++) B[A[i]]++;  // Cập nhật tần suất số có giá trị A[i]
+    for (int i = 0; i < n; i++) freq[arr[i]]++;  // Cập nhật tần suất số có giá trị arr[i]
 
-    for (int i = 0; i <= Max; i++){
-         if (B[i] > 0) cout << i << " - " << B[i] << "; ";  // Số có tần suất > 0 (tồn tại trong A) thì mới xuất 
+    for (int i = 0; i <= max; i++){
+         if (freq[i] > 0) cout << i << " - " << freq[i] << "; ";  // Số có tần suất > 0 (tồn tại trong arr) thì mới xuất 
     }
     return 0;
 }
