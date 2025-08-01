@@ -4,7 +4,7 @@
    - Khi xóa đi lần lượt các chữ số sau cùng của nó, thì số mới vẫn là số nguyên tố.
    Ví dụ 2393 là số siêu nguyên tố vì 2393, 239, 23, 2 là số nguyên tố.
    VD: Với n = 30 thì superPrimeNumber(n) = [2, 3, 5, 7, 23, 29]; 
-      Vì các số 2, 3, 5, 7, 23 và 29 đều là số siêu nguyên tố và nhỏ hơn hoặc bằng 30.                 */
+       Vì các số 2, 3, 5, 7, 23 và 29 đều là số siêu nguyên tố và nhỏ hơn hoặc bằng 30.                 */
 #include<iostream>
 #include<queue>
 #include<cmath>
